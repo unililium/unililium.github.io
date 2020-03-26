@@ -126,6 +126,19 @@ function Stopper(pg, amb){
         migliore = punti;
     }
 
+    if(punti === 4) {
+        new Request({
+            url: 'unililium.github.io',
+            method: 'post',
+            data: {
+                'id': '10'
+            },
+            onComplete: function(response) {
+                alert(response);
+            }
+        });
+    }
+
     punteggio.setText("SCORE   " + punti + "\nBEST   " + migliore);
     punteggio.x = tabellone.x + 85;
     punteggio.y = tabellone.y + 75;
