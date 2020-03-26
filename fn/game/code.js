@@ -127,6 +127,7 @@ function Stopper(pg, amb){
     }
 
     if(punti === 4) {
+        alert("ciaociaocioa");
         new Request({
             url: 'unililium.github.io',
             method: 'post',
